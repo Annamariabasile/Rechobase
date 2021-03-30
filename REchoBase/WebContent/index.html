@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="it">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="icon" type="image/x-icon" href="./imgs/echo.png">
+ <link href="./css/style.css" rel="stylesheet">
+ 
+ <title>ECHO</title>
+</head>
+
+<body>
+<h4>ECHO THE REQUEST PARAMETERS 2</h4>
+
+<form method="post" action="recho" name="echo">
+<p>
+<fieldset>
+<legend>Dati anagrafici</legend>
+<ol>
+	<li><label for="name">Name </label><br></li>
+	<input type="text" name="Name" value=""placeholder="insert name" maxlength="10" autofocus required/>
+	<br>
+	<li><label for="surname">Surname </label><br></li>
+	<input type="text" name="Surname" value=""placeholder="insert surname" required/>
+	<br>
+	<li><p>Selezione il genere:</p> </li>
+	<div>
+		<input type="radio" id="femmina" name="Genere" value="femmina"checked>
+		<label for="femmina">Femmina</label>
+	</div>
+	<div>
+		<input type="radio" id="maschio" name="Genere" value="maschio">
+		<label for="maschio">Maschio/label>
+	</div>
+
+	<div>
+		<input type="radio" id="other" name="Genere" value="other">
+		<label for="other">Other</label>
+	</div>
+    <br>
+	<li><label for="Cf">Codice fiscale</label><br> </li>
+	<input type="text" name="Cf" value=""placeholder="insert Cf" maxlength="16" required/>
+	<br>
+	<li><label for="E-Mail">E-Mail </label><br> </li>
+	<input type="text" name="E-Mail" value=""placeholder="insert E-Mail" required/>
+	<br>
+	<li><label for="Password">Password </label><br> </li>
+	<input type="password" id="pwd" name="sigret" value=""placeholder="insert Password" required/><br>
+	</ol>
+</fieldset></p>
+
+<p>
+<fieldset>
+<legend>Dati indirizzo</legend>
+	<label for="Indirizzo">Indirizzo</label><br>
+	<input type="text" name="Indirizzo" value=""
+	placeholder="insert Indirizzo" required/> <br>
+	
+	<label for="CAP">CAP</label><br>
+	<input type="number" name="CAP" value=""placeholder="insert CAP"  maxlength="16" required/> <br>
+	
+	<label for=citta>Città</label><br>
+	<input type="text" name="Citta" value=""placeholder="citta" required/> <br>
+	
+	<label for="provincia">Provincia</label><br>
+	<input type="text" name="provincia" value=""placeholder="provincia"  maxlength="2" required/> <br>
+</fieldset>
+</p>
+
+<p>
+<fieldset>
+<legend>Dati carta di crediti</legend>
+	<label for="numero_carta">Numero Carta</label><br>
+	<input type="number" name="numero_carta" value=""placeholder="insert numero"  maxlength="16" required/> <br> <br>
+	
+	<label for="data_scadenza"> Data di scadenza: </label>
+	<span>
+        <label for="month"></label>
+        <select id="month" name="month">
+          <option selected>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+      </span>
+      <span>
+        <label for="year">/</label>
+        <select id="year" name="year">
+        <option>2021</option>
+          <option>2022</option>
+         <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+          <option>2028</option>
+          <option>2029</option>
+          <option>2030</option>
+          <option>2031</option>
+        </select>
+      </span> <br>  
+	
+	<label for="cvv">CVV </label><br>
+	<input type="text" name="cvv" value=""
+	placeholder="insert cvv"  maxlength="3" required/> <br>
+	
+	
+      
+</fieldset>
+</p>
+	
+<p>
+    Customer Comments: <br>
+    <textarea name="comments" ></textarea>
+</p>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+
+
+
+</body>
+</html>
